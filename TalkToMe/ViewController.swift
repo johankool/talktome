@@ -142,11 +142,13 @@ extension ViewController: AVSpeechSynthesizerDelegate {
             synthesizer.speak(utterances[nextIndex])
         } else {
             status = .ready
+            highlightedRange = nil
         }
     }
     
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didPause utterance: AVSpeechUtterance) {
         status = .paused
+        highlightedRange = nil
     }
     
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didContinue utterance: AVSpeechUtterance) {
@@ -155,6 +157,7 @@ extension ViewController: AVSpeechSynthesizerDelegate {
     
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didCancel utterance: AVSpeechUtterance) {
         status = .ready
+        highlightedRange = nil
     }
     
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, willSpeakRangeOfSpeechString characterRange: NSRange, utterance: AVSpeechUtterance) {
