@@ -59,8 +59,8 @@
 				C7DF486B2B179A75009AA528 /* AppDelegate.swift */,
 				C7DF486D2B179A75009AA528 /* SceneDelegate.swift */,
 				C7DF486F2B179A75009AA528 /* ViewController.swift */,
-				C7DF48712B179A75009AA528 /* Main.storyboard */,
 				C7DF48742B179A76009AA528 /* Assets.xcassets */,
+				C7DF48712B179A75009AA528 /* Main.storyboard */,
 				C7DF48762B179A76009AA528 /* LaunchScreen.storyboard */,
 				C7DF48792B179A76009AA528 /* Info.plist */,
 			);

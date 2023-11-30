@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -19,21 +20,85 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="116" translatesAutoresizingMaskIntoConstraints="NO" id="SDP-y4-kI0">
                                 <rect key="frame" x="16" y="75" width="361" height="727"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, world!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IoS-4W-N13">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="576.66666666666663"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qOe-ol-Wup">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="426.33333333333331"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="9yc-Q7-bT6">
+                                                <rect key="frame" x="20" y="-96" width="329" height="440"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IoS-4W-N13">
+                                                        <rect key="frame" x="0.0" y="0.0" width="329" height="82.333333333333329"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Dit is een uitprobeersel">
+                                                                <attributes>
+                                                                    <font key="NSFont" metaFont="systemBold" size="14"/>
+                                                                    <font key="NSOriginalFont" metaFont="systemBold" size="14"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment>
+                                                                <string key="content">
+
+Lotje leerde Liesje lopen langs de lange lindelaan, maar toen Liesje niet wou lopen liet Lotje Liesje staan.</string>
+                                                                <attributes>
+                                                                    <font key="NSFont" metaFont="menu" size="14"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fY-VM-QDr">
+                                                        <rect key="frame" x="0.0" y="102.33333333333334" width="329" height="83.666666666666657"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment>
+                                                                <string key="content">Bram de brave broer van breiende brauwende Brielse Brechtje, bracht in zijn bronsbruin broekje een bril en een brandbrief en een gebroken brokje bros bruin brood over de brede brug naar Breukelen.</string>
+                                                                <attributes>
+                                                                    <font key="NSFont" metaFont="menu" size="14"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CH4-mo-Z5t">
+                                                        <rect key="frame" x="0.0" y="206" width="329" height="234"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment>
+                                                                <string key="content">Er waren eens twee nachtwachten, een voor-middernacht-nachtwacht en een na-middernacht-nachtwacht. De voor-middernacht-nachtwacht zei tegen de na-middernacht-nachtwacht: "Als jij de voor-middernacht-nachtwacht waakt, waak ik de na-middernacht-nachtwacht." "oke" zei de na-middernacht-nachtwacht tegen de voor-middernacht-nachtwacht "Ik waak de voor-middernacht-nachtwacht en dan waak jij de na-middernacht-nachtwacht." Zo kwam het dat de voor-middernacht-nachtwacht de na-middernacht-nachtwacht waakte en de na-middernacht-nachtwacht de voor-middernacht-nachtwacht waakte.</string>
+                                                                <attributes>
+                                                                    <font key="NSFont" metaFont="menu" size="14"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="97G-6K-ZIc"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="jUV-m9-M7a"/>
+                                    </scrollView>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gj-aw-PPG">
-                                        <rect key="frame" x="0.0" y="692.66666666666663" width="361" height="34.333333333333371"/>
+                                        <rect key="frame" x="0.0" y="542.33333333333337" width="361" height="34.333333333333371"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Speak"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Spreek"/>
                                         <connections>
                                             <action selector="speakButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0pG-nn-pgD"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="eoi-kM-Jt9">
+                                        <rect key="frame" x="0.0" y="692.66666666666663" width="361" height="34.333333333333371"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Pauzeer"/>
+                                        <connections>
+                                            <action selector="pauseButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LlJ-Wh-0Pp"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="9yc-Q7-bT6" firstAttribute="width" secondItem="SDP-y4-kI0" secondAttribute="width" constant="-32" id="Qeo-CO-6pK"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -46,7 +111,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="pauseButton" destination="eoi-kM-Jt9" id="LHU-RN-uiR"/>
+                        <outlet property="speakButton" destination="5gj-aw-PPG" id="wEb-Y1-LtE"/>
                         <outlet property="textLabel" destination="IoS-4W-N13" id="Dts-ut-omS"/>
+                        <outlet property="textLabel2" destination="4fY-VM-QDr" id="CW8-tu-hM4"/>
+                        <outlet property="textLabel3" destination="CH4-mo-Z5t" id="xyJ-9p-MGk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
